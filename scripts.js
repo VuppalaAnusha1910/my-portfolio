@@ -1,27 +1,27 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const form = document.querySelector("form");
+function addRecommendation() {
+  // Get the message of the new recommendation
+  let recommendation = document.getElementById("new_recommendation");
+  // If the user has left a recommendation, display a pop-up
+  if (recommendation.value != null && recommendation.value.trim() != "") {
+    console.log("New recommendation added");
+    showPopup(true);
 
-    form.addEventListener("submit", function (event) {
-        event.preventDefault(); // Prevents actual form submission
+    // Create a new 'recommendation' element and set it's value to the user's message
+    var element = document.createElement("div");
+    element.setAttribute("class","recommendation");
+    element.innerHTML = "\<span\>&#8220;\</span\>" + recommendation.value + "\<span\>&#8221;\</span\>";
+    // Add this element to the end of the list of recommendations
+    document.getElementById("all_recommendations").appendChild(element); 
+    
+    // Reset the value of the textarea
+    recommendation.value = "";
+  }
+}
 
-        // Create the pop-up container
-        let popup = document.createElement("div");
-        popup.classList.add("popup");
-
-        // Pop-up content
-        popup.innerHTML = `
-            <div class="popup-content">
-                <span class="popup-icon">✔</span>
-                <p>Thanks for leaving a recommendation!</p>
-                <button class="popup-btn">Ok</button>
-            </div>
-        `;
-        document.body.appendChild(popup);
-
-        // Close pop-up when "Ok" button is clicked
-        let popupBtn = popup.querySelector(".popup-btn");
-        popupBtn.addEventListener("click", function () {
-            popup.remove();
-        });
-    });
-});
+function showPopup(bool) {
+  if (bool) {
+    document.getElementById('popup').style.visibility = 'visible'
+  } else {
+    document.getElementById('popup').style.visibility = 'hidden'
+  }
+}
