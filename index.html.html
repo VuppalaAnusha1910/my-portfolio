@@ -1,109 +1,163 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>My Bio</title>
-        <link rel="stylesheet" href="styles.css">
-        <script src="scripts.js"></script>
-    </head>
-    <body>
-        <header>
-            <div id="left">
-                <h3 id="Name"> Anusha Vuppala</h3>
-                <p><a href="vuppalaanusha1910@gmail.com">vuppalaanusha1910@gmail.com</a></p>
-                <p><a href="+18065441668">+18065441669</a></p>
-            </div>
+  <head>
+    <title>Jane Doe - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Anusha Vuppala
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          vuppalaanusha1910@gmail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +18065441669
 
-              <nav class="right">
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#recommendations">Recommendations</a>
-            </nav>
-        </header>
-        <article class="bio-container">
-            <img src="https://cdn.pixabay.com/photo/2025/02/16/10/26/ai-generated-9410570_1280.png"width="150" height="150">
-            <div class="bio-text">
-                <h2 class="hiLeft"> Hi, I'm Anusha Vuppala!</h2>
-                <p class="bio-para"> I am doing my final project in coursera in HTML,CSS and javascript which helps me to have a ands on practice on building websides and styling them. I am a master's student in Texas Tech University</p>
-            </div>
-        </article>
-            <section class="skills">
-                <h2>Skills</h2>
-                <div class="skills-container">
-                    <div class="skill-card">
-                        <img src="https://static.vecteezy.com/ti/vetor-gratis/t1/13313458-ilustracao-de-renderizacao-3d-de-icone-html-vetor.jpg" alt="HTML">
-                        <p>HTML</p>
-                        <p>2 years experience</p>
-                    </div>
-                    <div class="skill-card">
-                        <img src="https://thumbs.dreamstime.com/b/javascript-icon-logo-javascript-often-abbreviated-as-js-programming-language-conforms-to-ecmascript-specification-204759326.jpg" alt="JavaScript">
-                        <p>JavaScript</p>
-                        <p>1.5 years experience</p>
-                    </div>
-                    <div class="skill-card">
-                        <img src="https://1000logos.net/wp-content/uploads/2020/09/Java-Emblem.jpg" alt="Java">
-                        <p>Java</p>
-                        <p>0.5 years experience</p>
-                    </div>
-                    <div class="skill-card">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1150px-React-icon.svg.png" alt="React">
-                        <p>React</p>
-                        <p>1 year experience</p>
-                    </div>
-                    <div class="skill-card">
-                        <img src="https://miro.medium.com/v2/resize:fit:866/1*1UBNwRFaslvqt_G3Njw3pg.jpeg" alt="Node.js">
-                        <p>Node.js</p>
-                        <p>1 year experience</p>
-                    </div>
-                    <div class="skill-card">
-                        <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS">
-                        <p>CSS</p>
-                        <p>2 years experience</p>
-                    </div>
-                </div>
-            </section>
-        
-            <section class="projects">
-                <h2>Projects</h2>
-                <div class="projects-list">
-                    <div class="project">
-                    <h3>Chatbot</h3>
-                    <p>Developed a secure website integrated with chatbot for an automobile client using HTML, CSS, JavaScript, and IBM Watson Assistant.</p>
-                    </div>
-                     <div class="project">
-                    <h3>Sentiment Analyzer</h3>
-                    <p>Developed and deployed a sentiment analyzer for the box reviews section of an eCommerce platform using IBM NLU.</p>
-                    </div>
-                    <div class="project">
-                    <h3>Fashion Website</h3>
-                    <p>Created a styled multi-page website for a new player in the fashion industry and integrated it with a shopping cart, using Stripe for payment gateway.</p>
-                    </div>
-                </div>
-            </section>
-        
-            <section class="recommendations">
-                <h2>Recommendations</h2>
-                <div>
-                     <div class="recommendation">
-                    <p>“ Jane is a very quick learner and quickly grasps key concepts of Web development. She got a great attitude & she is an excellent team player. She has a curious mind and asks the right question. She takes initiative within a team and has potential to lead the team. ”</p>
-                     </div>
-                    <div class="recommendation">
-                    <p>“ Working with Jane has been an awesome experience. She is highly knowledgeable and always goes the extra step to make sure everything is right. For any future projects that need her expertise, I would definitely want to work with her again. ”</p>
-                    </div>
-                    <div class="recommendation">
-                    <p>“ I had worked along with Jane during the initial phase of our venture which needed Web development. She is a committed resource who has in-depth knowledge about the domain. She will be an asset for any organization! ”</p>
-                    </div>
-                </div>
-            </section>
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
 
-            <section>
-                <h4> Leave a Recommendation</h4>
-                <form>
-                    <input type="text" id="name" name="name" placeholder="Name (Optional)">
-                    <textarea id="message" name="message" rows="4" placeholder="Message"></textarea>
-                    <button type="submit" class="submit-btn">Submit</button>
-                </form>
-            </section>
-    </body>
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://miro.medium.com/max/1400/1*qdAW1TjCN57h1lbuuzvchg.gif" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Anusha Vuppala! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            I am a full stack developer with 2 years of experience in both application and presentation layers.
+            I have worked on applications and microservices deployed on IBM Cloud. 
+            I am an avid user of IBM Watson Services and have worked on Watson Assistant, NLU, Sentiment analyzer to name a few.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div>  
+
+        <!-- Add more skills here -->
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Chatbot</h3>
+            <ul>
+              <li>Developed a secure website integrated with chatbot for an automobile client using HTML, CSS, JavaScript and IBM Watson Assistant</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Sentiment Analyzer</h3>
+            <ul>
+              <li>Developed and deployed a sentiment analyzer for the box reviews section of an eCommerce platform using IBM NLU</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Fashion Website</h3>
+            <ul>
+              <li>Created a styled multi-page website for a new player in the fashion industry and integrated it with a shopping cart, using stripe for payment gateway</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Anusha is a very quick learner and quickly grasps key concepts of Web development. 
+          She got a great attitude & she is an excellent team player. 
+          She has a curious mind and asks the right question. 
+          She takes initiative within a team and has potentials to lead the team.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Working with Anusha has been an awesome experience. 
+          She is highly knowledgable and always goes the extra step to make sure everything is right. 
+          For any future projects that need her expertise I would definitely want to work with her again.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          I had worked along with Anusha during the initial phase of our venture which needed Web development. 
+          She is a committed resource who has in depth knowledge about the domain. 
+          She will be an asset for any organisation! 
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3><!-- Add appropriate text here--></h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
 </html>
-    
