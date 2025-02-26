@@ -1,0 +1,150 @@
+/* Header Styling */
+header {
+    background-color: blueviolet; /* Violet-blue background */
+    color: white; /* White text */
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between; /* Left and Right Alignment */
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Left section - Name and Contact */
+.left {
+    text-align: left;
+}
+
+/* Right section - Navigation */
+.right {
+    display: flex;
+    gap: 20px; /* Space between links */
+}
+
+.right a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.right a:hover {
+    text-decoration: underline;
+}
+
+/* Sections */
+section {
+    padding: 20px;
+    margin: 20px;
+    border-bottom: 2px solid #ccc;
+}
+/* Aligning image and text side by side */
+.bio-container {
+    display: flex;
+    align-items: center;  /* Centers text vertically with the image */
+    gap: 20px;  /* Adds space between image and text */
+    padding: 20px;
+}
+.bio-text {
+    display: flex;
+    flex-direction: column; /* Stack h2 and paragraph vertically */
+}
+/* Style the image */
+.bio-container img {
+    border: 80%; /* Makes image circular */
+    border: 3px solid #0073e6; /* Adds border to the image */
+}
+
+/* Style the text */
+.hiLeft {
+    text-align: left;
+    font-size: 24px;
+    color: #333;
+    margin: 0;
+}
+.bio-para {
+    text-align: left;
+    font-size: 16px;
+    color: #555;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+h2 {
+    color: #5e2ca5;
+    text-align: center;
+}
+
+.skills-container, .recommendations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill-card {
+    background: white;
+    padding: 15px;
+    text-align: center;
+    width: 150px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skill-card img {
+    width: 40px;
+    height: 40px;
+}
+
+.recommendation {
+    background: white;
+    padding: 15px;
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px auto;
+}
+
+
+.recommendation {
+    font-style: italic;
+}
+.form-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.submit-btn {
+    background: white;
+    color: #800080; /* Purple color */
+    padding: 10px 15px;
+    border: 2px solid #800080;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-btn:hover {
+    background: #800080;
+    color: white;
+}
